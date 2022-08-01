@@ -17,4 +17,4 @@ spec:
     vpcIdRef:
       name: production-vpc
   providerConfigRef:
-    name: awsconfig
+    name: "aws-provider-config"
