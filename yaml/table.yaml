@@ -16,6 +16,6 @@ spec:
       - subnetIdRef:
           name: Inside-2a
     vpcIdRef:
-      name: vpc-0039692d4dfd22c93
+      name: vpc-0039692d4dfd22c931123
   providerConfigRef:
     name: aws-provider-config
