@@ -4,7 +4,7 @@ metadata:
     name: "sample-instance"
 spec:
         providerConfigRef:
-              name: "provider-aws"
+              name: "crossplane-provider-aws"
         forProvider:
               subnetId: "subnet-0814938360f2fdf5b"
               imageId: "ami-08d4ac5b634553e16"
