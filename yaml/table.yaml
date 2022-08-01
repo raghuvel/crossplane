@@ -12,10 +12,10 @@ spec:
           name: production-internetgateway
     associations:
       - subnetIdRef:
-          name: prod-subnet-2
+          name: App-2a
       - subnetIdRef:
-          name: prod-subnet-1
+          name: Inside-2a
     vpcIdRef:
-      name: production-vpc
+      name: vpc-0039692d4dfd22c93
   providerConfigRef:
     name: aws-provider-config
