@@ -16,4 +16,4 @@ spec:
     subnetIdRef:
       name: sample-subnet1  
   providerConfigRef:
-    name: aws-provider-config
+    name: crossplane-provider-aws
