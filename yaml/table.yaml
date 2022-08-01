@@ -1,21 +1,19 @@
 ---
-apiVersion: ec2.aws.crossplane.io/v1beta1
-kind: RouteTable
+apiVersion: ec2.aws.crossplane.io/v1alpha1
+kind: Instance
 metadata:
-  name: production-routetable
+  name: sample-instance
 spec:
   forProvider:
     region: us-east-1
-    routes:
-      - destinationCidrBlock: 0.0.0.0/0
-        gatewayIdRef:
-          name: production-internetgateway
-    associations:
-      - subnetIdRef:
-          name: App-2a
-      - subnetIdRef:
-          name: Inside-2a
-    vpcIdRef:
-      name: vpc-0b2019a3ed0fbe7af
+    imageId: ami-0dc2d3e4c0f9ebd18
+    blockDeviceMappings:
+     - deviceName: /dev/sdx
+       ebs:
+         volumeSize: 100
+    securityGroupRefs:
+      - name: sample-cluster-sg
+    subnetIdRef:
+      name: sample-subnet1  
   providerConfigRef:
     name: aws-provider-config
