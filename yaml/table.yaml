@@ -11,4 +11,4 @@ spec:
     subnetIdRef:
       name: sample-subnet1  
   providerConfigRef:
-    name: example
+    name: awdsonfig
