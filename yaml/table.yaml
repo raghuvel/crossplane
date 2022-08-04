@@ -7,7 +7,7 @@ spec:
     region: us-east-1
     imageId: ami-0dc2d3e4c0f9ebd18
     securityGroupRefs:
-      - name: sample-cluster-sg
+      - name: sg-092d90898b349e1b5 - 223734514_N_S0009309056_2021-02-26-08-16_99149c9f-170c-461d-9cdb-9deefce3205e
     subnetIdRef:
       name: Db-2a
   providerConfigRef:
