@@ -6,13 +6,5 @@ spec:
   forProvider:
     region: us-east-1
     imageId: ami-0dc2d3e4c0f9ebd18
-    blockDeviceMappings:
-     - deviceName: /dev/sdx
-       ebs:
-         volumeSize: 100
-    securityGroupRefs:
-      - name: sg-001629a4d1173a3e8
-    subnetIdRef:
-      name: Db-2a
   providerConfigRef:
     name: awsconfig
