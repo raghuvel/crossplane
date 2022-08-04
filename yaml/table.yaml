@@ -9,6 +9,6 @@ spec:
     securityGroupRefs:
       - name: sample-cluster-sg
     subnetIdRef:
-      name: sample-subnet1  
+      name: Db-2a
   providerConfigRef:
     name: awsconfig
